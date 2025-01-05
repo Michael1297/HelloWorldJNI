@@ -1,0 +1,32 @@
+sudo apt install openjdk-17-jdk
+
+
+sudo echo 'JAVA_INCLUDE_PATH="/usr/lib/jvm/java-17-openjdk-amd64/include"' >> /etc/environment
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+export JAVA_INCLUDE_PATH=${JAVA_HOME}/include
+export JAVA_INCLUDE_PATH2=${JAVA_INCLUDE_PATH}/linux
+
+
+export JAVA_AWT_LIBRARY=${JAVA_HOME}/lib/jawt.lib
+export JAVA_JVM_LIBRARY=${JAVA_HOME}/lib/jvm.lib
+export JAVA_AWT_INCLUDE_PATH=${JAVA_HOME}/include
+
+set(JAVA_AWT_LIBRARY ${JAVA_HOME}/lib/jawt.lib)
+	set(JAVA_JVM_LIBRARY ${JAVA_HOME}/lib/jvm.lib)
+	set(JAVA_INCLUDE_PATH ${JAVA_HOME}/include)
+	set(JAVA_INCLUDE_PATH2 ${JAVA_HOME}/include/win32)
+	set(JAVA_AWT_INCLUDE_PATH ${JAVA_HOME}/include)
+
+
+set(JAVA_AWT_LIBRARY "$ENV{JAVA_HOME}/lib/libjawt.so")
+set(JAVA_JVM_LIBRARY "$ENV{JAVA_HOME}/lib/server/libjvm.so")
+set(JAVA_INCLUDE_PATH "$ENV{JAVA_HOME}/include")
+set(JAVA_INCLUDE_PATH2 "$ENV{JAVA_HOME}/include/linux")
+set(JAVA_AWT_INCLUDE_PATH "$ENV{JAVA_HOME}/include")
+
+
+https://apt.kitware.com/
+3.31.2
+wget https://github.com/Kitware/CMake/releases/download/v3.31.2/cmake-3.31.2.tar.gz
