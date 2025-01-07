@@ -1,5 +1,5 @@
 # Проверка версии CMake
-cmake_minimum_required(VERSION 3.16.3)
+cmake_minimum_required(VERSION 3.26)
 
 file(GLOB sources "*.c" "*.cpp" "${INCLUDE_DIR}/*.h")
 
