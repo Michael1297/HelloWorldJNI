@@ -7,13 +7,21 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-  /*
-   * Class:     HelloWorldJNI
-   * Method:    hello
-   * Signature: ()V
-   */
-  JNIEXPORT void JNICALL Java_HelloWorldJNI_hello
-    (JNIEnv *, jobject);
+    /*
+     * Class:     HelloWorldJNI
+     * Method:    hello
+     * Signature: ()V
+     */
+    JNIEXPORT void JNICALL Java_HelloWorldJNI_hello
+      (JNIEnv *, jobject);
+
+    /*
+     * Class:     HelloWorldJNI
+     * Method:    riskyNativeMethod
+     * Signature: ()V
+     */
+    JNIEXPORT void JNICALL Java_HelloWorldJNI_riskyNativeMethod
+      (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }
